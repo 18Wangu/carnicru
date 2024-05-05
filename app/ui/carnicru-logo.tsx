@@ -6,8 +6,8 @@ export default function CarnicruLogo() {
             <Image 
                 src="/carnicru-logo.svg" 
                 alt="Carnicru Logo" 
-                width={100} 
-                height={100} 
+                width={200} 
+                height={200} 
             />
         </div>
     );

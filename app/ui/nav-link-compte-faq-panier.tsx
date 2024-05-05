@@ -13,14 +13,14 @@ const links = [
 export default function NavLinkCompteFaqPanier() {
     const pathname = usePathname();
   return (
-    <>
+    <div className="flex">
       {links.map((link) => {
         return (
           <Link
             key={link.name}
             href={link.href}
             className={clsx(
-              'text-white',
+              'text-[#004339] text-2xl pl-12',
               {
                 'text-blue-600': pathname === link.href,
               },
@@ -30,7 +30,7 @@ export default function NavLinkCompteFaqPanier() {
           </Link>
         );
       })}
-    </>
+    </div>
   );
 }
 
