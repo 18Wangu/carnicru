@@ -20,9 +20,9 @@ export default function NavLinkCompteFaqPanier() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'text-[#004339] text-2xl pl-12',
+              'text-[#004339] text-2xl pl-12 uppercase',
               {
-                'text-blue-600': pathname === link.href,
+                'text-[#149A77]': pathname === link.href,
               },
             )}
           >

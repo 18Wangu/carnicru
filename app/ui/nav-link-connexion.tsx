@@ -19,9 +19,9 @@ export default function NavLinkConnexion() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'text-[#149A77] text-2xl',
+              'text-[#149A77] text-2xl uppercase', //peut etre changer la couleur
               {
-                'text-red-600': pathname === link.href,
+                'text-[#149A77]': pathname === link.href,
               },
             )}
           >
