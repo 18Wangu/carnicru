@@ -3,15 +3,13 @@
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import Link from "next/link";
+import { daysOneFont } from "./font";
 
 const links = [
-    { name: "Connexion", href: "/connexion", className: "text-red-500" },
-    { name: "Compte", href: "/compte", className: "text-blue-500" },
-    { name: "Faq", href: "/faq", className: "text-green-500" },
-    { name: "Panier", href: "/panier", className: "text-yellow-500" },
+    { name: "Se connecter", href: "/connexion" },
 ];
 
-export default function NavLink() {
+export default function NavLinkConnexion() {
     const pathname = usePathname();
   return (
     <>
@@ -21,12 +19,13 @@ export default function NavLink() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'text-gray-500',
+              'text-[#149A77] text-2xl',
               {
-                'text-blue-600': pathname === link.href,
+                'text-red-600': pathname === link.href,
               },
             )}
           >
+            <p className="hidden md:block">{link.name}</p>
           </Link>
         );
       })}
