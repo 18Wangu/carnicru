@@ -1,5 +1,4 @@
-import Image from "next/image";
-import CarnicruLogo from "../components/CarnicruLogo";
+import CarnicruLogo from "./ui/carnicru-logo";
 
 export default function Home() {
   return (

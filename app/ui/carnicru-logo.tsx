@@ -4,7 +4,7 @@ export default function CarnicruLogo() {
     return (
         <div className="flex justify-center">
             <Image 
-                src="/carnicru-logo.png" 
+                src="/carnicru-logo.svg" 
                 alt="Carnicru Logo" 
                 width={100} 
                 height={100} 
