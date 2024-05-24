@@ -5,9 +5,9 @@ import clsx from "clsx";
 import Link from "next/link";
 
 const links = [
-    { name: "Compte", href: "/compte" },
-    { name: "Faq", href: "/faq" },
-    { name: "Panier", href: "/panier" },
+    { name: "Compte", href: "/pages/compte" },
+    { name: "Faq", href: "/pages/faq" },
+    { name: "Panier", href: "/pages/panier" },
 ];
 
 export default function NavLinkCompteFaqPanier() {
@@ -17,7 +17,7 @@ export default function NavLinkCompteFaqPanier() {
       {links.map((link) => {
         return (
           <Link
-            key={link.name}
+            key={link.name} 
             href={link.href}
             className={clsx(
               'text-[#004339] text-2xl pl-12 uppercase',
