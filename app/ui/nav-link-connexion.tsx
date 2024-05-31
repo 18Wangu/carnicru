@@ -6,7 +6,7 @@ import Link from "next/link";
 import { daysOneFont } from "./font";
 
 const links = [
-    { name: "Se connecter", href: "/connexion" },
+    { name: "Se connecter", href: "/pages/connexion" },
 ];
 
 export default function NavLinkConnexion() {
